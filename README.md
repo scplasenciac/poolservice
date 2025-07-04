@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# PoolPro Ivan - Servicios de Limpieza de Piscinas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sitio web profesional para Ivan Castañeda, especialista en servicios de limpieza y mantenimiento de piscinas en Cathedral City, California.
 
-## Available Scripts
+## 🏊‍♂️ Características
 
-In the project directory, you can run:
+- Diseño responsive y moderno
+- Información detallada de servicios
+- Formulario de contacto
+- Optimizado para SEO
+- Disponible en desarrollo y producción
 
-### `npm start`
+## 🚀 Ambientes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Desarrollo (Localhost)
+Para desarrollo local:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+# Instalar dependencias
+npm install
 
-### `npm test`
+# Ejecutar en modo desarrollo
+npm run dev
+# o
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+El sitio estará disponible en: `http://localhost:3000`
 
-### `npm run build`
+### Producción (GitHub Pages)
+Para build de producción:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Build para producción
+npm run build:prod
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Build optimizado para GitHub Pages
+npm run build:github
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Preview del build
+npm run preview
+```
 
-### `npm run eject`
+## 📦 Scripts Disponibles
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `npm run dev` - Ejecuta en modo desarrollo con variables de entorno de desarrollo
+- `npm run build:dev` - Build para desarrollo
+- `npm run build:prod` - Build para producción
+- `npm run build:github` - Build optimizado para GitHub Pages (sin source maps)
+- `npm run preview` - Servir el build localmente para preview
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔧 Configuración
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Variables de Entorno
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Desarrollo (`env.development`)
+```
+REACT_APP_ENV=development
+REACT_APP_API_URL=http://localhost:3000
+REACT_APP_BASE_URL=http://localhost:3000
+REACT_APP_TITLE=PoolPro Ivan - Development
+REACT_APP_DEBUG=true
+REACT_APP_LOG_LEVEL=debug
+```
 
-## Learn More
+#### Producción (`env.production`)
+```
+REACT_APP_ENV=production
+REACT_APP_API_URL=https://your-production-api.com
+REACT_APP_BASE_URL=https://your-username.github.io/poolman_v1
+REACT_APP_TITLE=PoolPro Ivan - Professional Pool Services
+REACT_APP_DEBUG=false
+REACT_APP_LOG_LEVEL=error
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🌐 Despliegue en GitHub Pages
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Configurar GitHub Pages**:
+   - Ve a Settings > Pages en tu repositorio
+   - Selecciona "Deploy from a branch"
+   - Selecciona la rama `gh-pages`
 
-### Code Splitting
+2. **Deploy Automático**:
+   - El workflow de GitHub Actions se ejecutará automáticamente
+   - Cada push a `main` desplegará automáticamente
+   - El sitio estará disponible en: `https://your-username.github.io/poolman_v1`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. **Deploy Manual**:
+   ```bash
+   npm run build:github
+   # Subir la carpeta build/ a la rama gh-pages
+   ```
 
-### Analyzing the Bundle Size
+## 📁 Estructura del Proyecto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+poolman_v1/
+├── public/                 # Archivos públicos
+├── src/
+│   ├── components/         # Componentes React
+│   │   ├── Header.js
+│   │   ├── Hero.js
+│   │   ├── Services.js
+│   │   ├── About.js
+│   │   ├── Contact.js
+│   │   └── Footer.js
+│   ├── config/
+│   │   └── environment.js  # Configuración de ambientes
+│   ├── App.js
+│   └── index.js
+├── env.development         # Variables de entorno desarrollo
+├── env.production          # Variables de entorno producción
+├── .github/workflows/      # GitHub Actions
+└── package.json
+```
 
-### Making a Progressive Web App
+## 🛠️ Tecnologías
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- React 19
+- CSS3 con Flexbox y Grid
+- Responsive Design
+- GitHub Pages
+- GitHub Actions
 
-### Advanced Configuration
+## 📞 Información de Contacto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Ivan Castañeda**
+- **Teléfono**: (760) 555-1234
+- **Ubicación**: Cathedral City, California
+- **Horarios**: Lunes - Sábado, 6:00 AM - 6:00 PM
+- **Experiencia**: 10 años en servicios de piscinas
 
-### Deployment
+## 📝 Licencia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto es privado y está diseñado específicamente para Ivan Castañeda.
