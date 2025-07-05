@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/poolservice/static/css/main.40662730.css",
+    "main.js": "/poolservice/static/js/main.5d514d10.js",
+    "static/js/206.15ff2911.chunk.js": "/poolservice/static/js/206.15ff2911.chunk.js",
+    "index.html": "/poolservice/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.40662730.css",
+    "static/js/main.5d514d10.js"
+  ]
+}
