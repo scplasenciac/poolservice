@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/poolservice/static/css/main.df244c54.css",
+    "main.js": "/poolservice/static/js/main.6b76f907.js",
+    "static/js/453.0fe5e6a8.chunk.js": "/poolservice/static/js/453.0fe5e6a8.chunk.js",
+    "index.html": "/poolservice/index.html",
+    "main.df244c54.css.map": "/poolservice/static/css/main.df244c54.css.map",
+    "main.6b76f907.js.map": "/poolservice/static/js/main.6b76f907.js.map",
+    "453.0fe5e6a8.chunk.js.map": "/poolservice/static/js/453.0fe5e6a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df244c54.css",
+    "static/js/main.6b76f907.js"
+  ]
+}
